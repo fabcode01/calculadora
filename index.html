@@ -12,37 +12,63 @@
     <main>
         <div id="calculadora">
             <div id="box-result">
-                <p id=res>0</p>
+                <p id=res></p>
             </div>
 
-            <div >
+            <div id="sim">
                 <table>
                     <tr id="line-1">
-                        <td><input type="button" value="C"></td>
-                        <td><input type="button" value="/"></td>
-                        <td><input type="button" value="x"></td>
-                        <td id="apagar"><input type="button" value="DEL"></td>
-
+                        <td><input type="button" value="C" onclick="limparAll()"></td>
+                        
+                        <td><input type="button" value="÷" onclick="insert('/')"></td>
+                        
+                        <td><input type="button" value="x" onclick="insert('*')"></td>
+                        
+                        <td id="apagar"><input type="button" value="DEL" onclick="Del()"></td>
+                        
                     </tr>
                     <tr id="line-2">
-                        <td><input type="button" value="7" id="num"></td>
-                        <td><input type="button" value="8" id="num"></td>
-                        <td><input type="button" value="9" id="num"></td>
-                        <td><input type="button" value="-"></td>
+                        
+                        <td><input type="button" value="7" id="num" onclick="insert('7')"></td>
+                        
+                        <td><input type="button" value="8" id="num" onclick="insert('8')"></td>
+                        
+                        <td><input type="button" value="9" id="num" onclick="insert('9')"></td>
+                        
+                        <td><input type="button" value="-" onclick="insert('-')"></td>
 
                     </tr>
                     <tr id="line-4">
-                        <td><input type="button" value="4" id="num"></td>
-                        <td><input type="button" value="5" id="num"></td>
-                        <td><input type="button" value="6" id="num"></td>
-                        <td><input type="button" value="+"></td>
+                        
+                        <td><input type="button" value="4" id="num" onclick="insert('4')"></td>
+                        
+                        <td><input type="button" value="5" id="num" onclick="insert('5')"></td>
+                        
+                        <td><input type="button" value="6" id="num" onclick="insert('6')"></td>
+                        
+                        <td><input type="button" value="+" onclick="insert('+')"></td>
 
                     </tr>
                     <tr id="line-5">
-                        <td><input type="button" value="1" id="num"></td>
-                        <td><input type="button" value="2" id="num"></td>
-                        <td><input type="button" value="3" id="num"></td>
-                        <td><input type="button" value="=" id="calc"></td>
+                        
+                        <td><input type="button" value="1" id="num" onclick="insert('1')"></td>
+                        
+                        <td><input type="button" value="2" id="num" onclick="insert('2')"></td>
+                        
+                        <td><input type="button" value="3" id="num" onclick="insert('3')"></td>
+                        
+                        <td colspan="1"><input type="button" value="=" id="calc" onclick="calcular()"></td>
+
+                    </tr>
+                    <tr id="line-6">
+                        
+                        <td><input type="button" value="." id="num" onclick="insert('.')"></td>
+                        
+                        <td><input type="button" value="0" id="num" onclick="insert('0')"></td>
+                        
+                      
+                        
+                        
 
                     </tr>
 
@@ -65,5 +91,7 @@
             </a>
         </button>
    
-</body>
+</body>]
+
+<script src="script.js"></script>
 </html>
